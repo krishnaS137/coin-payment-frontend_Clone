@@ -15,7 +15,7 @@ const WithdrawAmt = ({ value, onChange, onAmountSet }: WithdrawAmtProps) => {
     // Convert to number and pass to parent
     const amount = parseInt(inputValue) || 0;
     onAmountSet(amount);
-  },[onchange,onAmountSet]);
+  },[onChange,onAmountSet]);
 
   return (
     <div>
