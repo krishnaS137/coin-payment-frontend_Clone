@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Buy Coins Title - RESPONSIVE ALIGNMENT */
+.buy-coins-title {
+  /* Mobile-first styles - LEFT ALIGNED */
+  width: 252px;
+  height: 45px;
+  position: absolute;
+  top: 60px;
+  left: 20px; /* Left aligned for mobile */
+  transform: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 25px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left; /* Left aligned for mobile */
+  opacity: 1;
+  color: #000;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Left aligned for mobile */
+  z-index: 10;
+}
+
+/* Back Arrow Button - ORIGINAL STYLING */
+.back-arrow-btn {
+  position: absolute;
+  top: 20px; /* Moved up to give space for title */
+  left: 15px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 30;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Coin Pill - ORIGINAL STYLING WITH RESPONSIVE */
+.coin-pill {
+  width: 95px;
+  height: 37px;
+  position: absolute;
+  top: 20px; /* Moved up to give space for title */
+  right: 20px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.32);
+  opacity: 1;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  z-index: 20;
+}
+
+.coin-image {
+  width: 16px;
+  height: 16px;
+}
+
+/* Your Coins Section - FIXED POSITIONING TO PREVENT OVERLAP */
+.your-coins-section {
+  position: absolute;
+  top: 130px; /* Moved down from 159px to account for title position change */
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 800px;
+  height: 166px;
+  margin: 0 auto;
+}
+
+.your-coins-card {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  background: linear-gradient(180.2deg, #C17A72 -12.9%, rgba(182, 133, 128, 0.820146) 57.79%, rgba(182, 133, 128, 0.23) 99.76%, #F3C0A9 99.78%);
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  opacity: 1;
+  transform: rotate(0deg);
+  position: relative;
+  overflow: hidden;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Logo Background Image - ORIGINAL STYLING */
+.logo-background-image {
+  position: absolute;
+  width: 120px;
+  height: 96px;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  opacity: 0.1;
+  object-fit: contain;
+  z-index: 1;
+}
+
+.your-coins-content {
+  position: relative;
+  z-index: 2;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.your-coins-label {
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 4px;
+}
+
+.your-coins-amount-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.coin-icon-container {
+  width: 32px;
+  height: 32px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 12px;
+  flex-shrink: 0;
+}
+
+.coin-icon-image {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.coin-amount-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: white;
+  flex-shrink: 0;
+}
+
+/* FIXED WITHDRAW BUTTON - RESPONSIVE */
+.withdraw-coins-btn {
+  background-color: white;
+  color: #333;
+  border: none;
+  border-radius: 12px;
+  padding: 8px 16px; /* Reduced padding for mobile */
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 12px; /* Smaller font for mobile */
+  cursor: pointer;
+  transition: all 0.3s ease;
+  align-self: flex-start;
+  white-space: nowrap; /* Prevent text wrapping */
+  min-height: 32px; /* Minimum height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto; /* Push to bottom */
+  max-width: 120px; /* Prevent button from getting too wide */
+  overflow: hidden;
+}
+
+.withdraw-coins-btn:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+  transform: translateY(-1px);
+}
+
+/* Package Card - ORIGINAL STYLING WITH RESPONSIVE */
+.package-card {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 106px;
+  border-radius: 20px;
+  border: 1px solid #6B6868;
+  box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
+  opacity: 1;
+  transform: rotate(0deg);
+  background: white;
+  margin: 0 auto 12px auto;
+}
+
+/* Best Seller Tag - ORIGINAL */
+.best-seller-tag {
+  position: absolute;
+  width: 113px;
+  height: 18px;
+  top: -8px;
+  left: 26px;
+  border-radius: 4px;
+  background: linear-gradient(90deg, #C17F78 0%, #BC7F5F 100%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 5;
+}
+
+/* Package Name - ORIGINAL */
+.package-name {
+  position: absolute;
+  width: 180px;
+  height: 22px;
+  top: 12px;
+  left: 28px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  color: #000;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Discount Section - ORIGINAL */
+.package-discount {
+  position: absolute;
+  width: 150px;
+  height: 18px;
+  top: 36px;
+  left: 28px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.discount-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #4CAF50;
+}
+
+.original-price {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #999;
+  text-decoration: line-through;
+}
+
+/* Price and Coins Container - ORIGINAL */
+.package-price-container {
+  position: absolute;
+  top: 60px;
+  left: 29px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.package-price {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #000;
+  display: flex;
+  align-items: center;
+}
+
+.package-coins {
+  height: 14px;
+  padding: 0 8px;
+  border-radius: 20px;
+  background: #E8E8E8;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #666;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+/* Buy Now Button - ORIGINAL */
+.package-buy-btn {
+  position: absolute;
+  width: 76px;
+  height: 24px;
+  top: 39px;
+  right: 20px;
+  border-radius: 20px;
+  background: #B68580;
+  border: none;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.package-buy-btn:hover {
+  background: #A67570;
+  transform: translateY(-1px);
+}
+
+/* Packages Section - FIXED POSITIONING */
+.packages-section {
+  position: absolute;
+  top: 320px; /* Adjusted to account for new your-coins-section position */
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.packages-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #000;
+  margin-bottom: 16px;
+}
+
+.packages-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Coins History Section - FIXED POSITIONING WITH PROPER SPACING */
+.coins-history-section {
+  position: absolute;
+  top: 750px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: calc(100% - 40px);
+  max-width: 800px;
+  margin: 0 auto 40px auto;
+}
+
+.coins-history-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coins-history-icon {
+  position: relative;
+  width: 25.88px;
+  height: 29.47px;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coins-history-icon::before {
+  content: '';
+  position: absolute;
+  width: 25.88px;
+  height: 29.47px;
+  background: #000000;
+  border-radius: 0;
+  z-index: 1;
+}
+
+.coins-history-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+}
+
+/* RESPONSIVE BREAKPOINTS */
+@media (max-width: 380px) {
+  .buy-coins-title {
+    top: 50px;
+    left: 15px;
+    font-size: 22px;
+    width: calc(100% - 120px);
+    text-align: left;
+    justify-content: flex-start;
+    transform: none;
+  }
+  
+  .your-coins-section {
+    top: 110px;
+    height: 140px;
+  }
+  
+  .your-coins-card {
+    height: 140px;
+    padding: 15px;
+  }
+  
+  .packages-section {
+    top: 270px;
+  }
+  
+  .coins-history-section {
+    top: 680px;
+  }
+}
+
+@media (min-width: 768px) {
+  .buy-coins-title {
+    top: 70px;
+    left: 30px;
+    font-size: 28px;
+    width: calc(100% - 200px);
+    height: 50px;
+  }
+  
+  .your-coins-section {
+    top: 140px;
+    height: 180px;
+  }
+  
+  .packages-section {
+    top: 340px;
+  }
+  
+  .coins-history-section {
+    top: 760px;
+  }
+}
+
+@media (min-width: 992px) {
+  .buy-coins-title {
+    top: 80px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 32px;
+    width: 350px;
+    height: 55px;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .your-coins-section {
+    top: 160px;
+    height: 200px;
+  }
+  
+  .packages-section {
+    top: 380px;
+  }
+  
+  .coins-history-section {
+    top: 800px;
+  }
+}
