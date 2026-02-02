@@ -1,13 +1,13 @@
 "use client";
 import React from 'react'
-import Image from 'next/image'
+
 const CoinPill = () => {
   return (
     <div 
       className="coin-pill position-absolute d-flex align-items-center justify-content-center text-white fw-medium"
     >
       <div className="d-flex align-items-center">
-        <Image 
+        <img
           src="/images/19331e9a326db2a70b77a1fb9b48481657d872a5.png"
           alt="Coin"
           className="coin-image me-2"

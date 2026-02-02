@@ -1,6 +1,6 @@
 "use client";
 import React from 'react'
-import Image from 'next/image'
+
 const MinCoinSec = ({conversionRate,maxWithdrawal,minWithdrawal}:{conversionRate:number,maxWithdrawal:number,minWithdrawal:number}) => {
   return (
     <div>
@@ -10,7 +10,7 @@ const MinCoinSec = ({conversionRate,maxWithdrawal,minWithdrawal}:{conversionRate
           border: '1px solid #B68580'
         }}>
             <div className='d-flex align-items-center gap-2 mb-1'>
-              <Image 
+              <img
                 src="/images/b840b483eeb61e83d6a21426686314fccc39ca57.png" 
                 alt="Lightbulb icon" 
                 style={{width: '24px', height: '24px'}}

@@ -12,7 +12,7 @@ import { apiGet, apiPostFormData } from '../../utils/api'
 import { useAuth } from '../../hooks/useAuth'
 import { CircularProgress } from '@mui/material'
 import Withdrawal_Success from '@/components/Withdrawal_Success';
-import Image from 'next/image'
+
 interface PackageResponse {
   data: {
     conversion_rate: number;
@@ -351,7 +351,7 @@ const WithdrawCoins = () => {
       {/* Footer */}
       <div className='d-flex align-items-center justify-content-center gap-3 mt-4' 
            style={{marginTop: '40px', padding: '0 20px'}}>
-        <Image 
+        <img
           src="/images/d2b70a34116dfd585990978a5ad17a787fd7225e.png"
           alt="Track withdrawal icon" 
           style={{width: '24px', height: '24px'}}

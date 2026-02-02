@@ -1,7 +1,7 @@
 import React from 'react'
 import MaskGroup from '../../public/images/SuccessTick.png'
 import NextButton from './NextButton'
-import Image from 'next/image'
+
 interface WithdrawalSuccessProps {
   coinsAmount: number;
   onDone: () => void;
@@ -10,7 +10,7 @@ interface WithdrawalSuccessProps {
 const Withdrawal_Success = ({ coinsAmount, onDone }: WithdrawalSuccessProps) => {
   return (
     <div className='d-flex justify-content-center align-items-center gap-5'>
-        <Image src={MaskGroup.src} alt="Withdrawal Success" />
+        <img src={MaskGroup.src} alt="Withdrawal Success" />
         <div className='d-flex flex-column justify-content-center align-items-center'>
             <h1 className='fs-1 fw-bold'>Withdrawal Successful!</h1>
             <p>You have successfully withdrawn {coinsAmount} coins.</p>
