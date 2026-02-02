@@ -1,5 +1,5 @@
 import React from "react";
-
+import Image from 'next/image'
 const InfinityCards = ({ image, content }: { image: string; content: string }) => {
   return (
     <div
@@ -14,9 +14,12 @@ const InfinityCards = ({ image, content }: { image: string; content: string }) =
       "
     >
       <div className="flex items-start gap-3">
-        <img
+        <Image
           src={image}
           alt="Image"
+          width={40}
+          height={40}
+          priority
           className="rounded-full size-10 object-cover"
         />
         <p className="text-sm leading-relaxed break-words">

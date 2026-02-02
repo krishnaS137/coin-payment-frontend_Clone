@@ -1,5 +1,5 @@
 "use client";
-
+import Image from 'next/image';
 import React from 'react'
 
 interface KYCDetails {
@@ -91,7 +91,7 @@ const KYC = ({ data, onChange }: KYCProps) => {
                 </div>
               ) : (
                 <>
-                  <img
+                  <Image
                     src="/images/861cd136c87bcf2918b0a1491efef519fa191b4f.png"
                     alt="Camera"
                     style={{
@@ -155,7 +155,7 @@ const KYC = ({ data, onChange }: KYCProps) => {
                 </div>
               ) : (
                 <>
-                  <img
+                  <Image
                     src="/images/861cd136c87bcf2918b0a1491efef519fa191b4f.png"
                     alt="Camera"
                     style={{
@@ -224,7 +224,7 @@ const KYC = ({ data, onChange }: KYCProps) => {
                 </div>
               ) : (
                 <>
-                  <img
+                  <Image
                     src="/images/861cd136c87bcf2918b0a1491efef519fa191b4f.png"
                     alt="Camera"
                     style={{
