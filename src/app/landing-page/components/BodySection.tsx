@@ -50,7 +50,7 @@ const BodySection = () => {
         {/* Pixel Image Section - now on the right */}
         <div className="flex-shrink-0">
           <PixelImage
-            src="/Images/monetizing-content-6918852_1280.jpg"
+            src="/images/monetizing-content-6918852_1280.jpg"
             customGrid={{ rows: 4, cols: 6 }}
             grayscaleAnimation
           />

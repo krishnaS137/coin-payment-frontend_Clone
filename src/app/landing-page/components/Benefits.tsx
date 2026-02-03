@@ -34,7 +34,7 @@ const Benefits = () => {
           Your next big chapter starts here. Dive into HOT — the place where creators vibe, compete, and glow together. One click on “Join,” and the spotlight’s on you.
           </TextReveal> 
           <Image
-            src="/Images/pexels-rdne-4910377.jpg" 
+            src="/images/pexels-rdne-4910377.jpg" 
             className="w-full max-w-[20rem] md:max-w-[24rem] h-64 md:h-80 object-cover rounded-lg shadow-lg md:flex-shrink-0 md:mx-8" 
             alt="Community and competition"
             width={100}
@@ -48,7 +48,7 @@ const Benefits = () => {
           From quick clips to daily thoughts, creativity lives here. Express yourself, explore others, and grow your circle.
           </TextReveal>
           <Image
-            src="/Images/pexels-sofus-34164951.jpg" 
+            src="/images/pexels-sofus-34164951.jpg" 
             className="w-full max-w-[20rem] md:max-w-[24rem] h-64 md:h-80 object-cover rounded-lg shadow-lg md:flex-shrink-0 md:mx-8" 
             alt="Trivia and talent battles"
             width={100}
@@ -62,7 +62,7 @@ const Benefits = () => {
           Winning’s great — but winning together hits different. Join challenges, earn your spotlight, and grow with every victory.
           </TextReveal>
           <Image 
-            src="/Images/pexels-wendywei-1190298.jpg" 
+            src="/images/pexels-wendywei-1190298.jpg" 
             className="w-full max-w-[20rem] md:max-w-[24rem] h-64 md:h-80 object-cover rounded-lg shadow-lg md:flex-shrink-0 md:mx-8" 
             alt="Victory and rewards"
             width={100}
@@ -76,7 +76,7 @@ const Benefits = () => {
           What’s epic alone becomes iconic together. Post it, tag your people, and turn moments into memories worth celebrating.
           </TextReveal>
           <Image 
-            src="/Images/pexels-pavel-danilyuk-7180617.jpg" 
+            src="/images/pexels-pavel-danilyuk-7180617.jpg" 
             className="w-full max-w-[20rem] md:max-w-[24rem] h-64 md:h-80 object-cover rounded-lg shadow-lg md:flex-shrink-0 md:mx-8" 
             alt="Sharing highlights"
             width={100}
