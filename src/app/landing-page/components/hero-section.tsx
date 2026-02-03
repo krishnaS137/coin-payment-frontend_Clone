@@ -10,7 +10,7 @@ import InfinityCards from './ui/InfinityCards'
 
 export default function HeroSection() {
     
-    const images=Array(21).fill('/Images/image.png')
+    const images=Array(21).fill('/images/image.png')
     return (
         <motion.div
         initial={{ opacity: 0, y: 20 }}
